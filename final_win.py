@@ -1,3 +1,4 @@
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLayout
 class FinalWin(QWidget):
   def __init__(self):
     super().__init__()
