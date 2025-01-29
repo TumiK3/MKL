@@ -30,6 +30,9 @@ class TestWin(QWidget):
         
         self.setLayout(self.h_line)
 
+    def results(self):
+        self.index=(4*(int(self.exp.t1)+int(self.exp.t2)+int(self.exp.t3))-200)/10
+
     def connects(self):
        
         self.btn1.clicked.connect(self.next_click)
