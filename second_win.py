@@ -32,6 +32,11 @@ class TestWin(QWidget):
 
     def results(self):
         self.index=(4*(int(self.exp.t1)+int(self.exp.t2)+int(self.exp.t3))-200)/10
+        if self.exp.age >= 15:
+            if self.index >= 15:
+                return txt_res1
+            elif self.index<15 and self.index>=11:
+                return txt_res2
 
     def connects(self):
        
