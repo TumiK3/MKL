@@ -25,6 +25,9 @@ class FinalWin(QWidget):
     self.button.addWidget(self.layout)
     
     self.setLayout(self.layout)
+    
+    self.work_text = QLabel(txt_workheart + self.results())
+    self.index_text = QLabel(txt_index + str(self.index))
 
 app = QApplication([])
 fw = FinalWin()
