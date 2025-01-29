@@ -6,6 +6,9 @@ class FinalWin(QWidget):
     self.initUI()
     self.show()
 
+  def __init__(self,exp):
+    self.exp = exp
+
    def set_appear(self):
     self.setWindowTitle(txt_title)
     self.resize(win_width, win_height)
